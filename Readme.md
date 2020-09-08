@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Mars Kovalevsky](https://up.htmlacademy.ru/htmlcss/29/user/1541839).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Савельев]  (https://htmlacademy.ru/profile/id1101501).
 
 ---
 
