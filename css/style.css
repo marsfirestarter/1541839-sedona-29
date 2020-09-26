@@ -118,10 +118,6 @@ img {
     background-color: var(--basic-light-gray)
 }
 
-.reasons-item-gray {
-    color: var(--basic-black)
-}
-
 .reasons-heading-white {
     color: var(--basic-white);
 
@@ -253,6 +249,7 @@ img {
 }
 
 .search-button {
+    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-white);
@@ -262,6 +259,7 @@ img {
 }
 
 .button-find {
+    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-white);
