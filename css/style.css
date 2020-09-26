@@ -22,6 +22,7 @@
   
   /* Global */
 
+
 body {
     min-width: 960px;
     margin: 0;
@@ -32,11 +33,11 @@ body {
     font-weight: normal;
     color: var(--basic-dark-gray);
     text-transform: uppercase;
-    background-color: var(--background-color);
+    background-color: var(--background-form);
     background-image: url(*);
     background-position: top center;
     background-repeat: no-repeat;
-  }
+}
 
 .page-body a {
     text-decoration: none;
@@ -45,7 +46,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
-  }
+}
 
   /* Main navigation */
 
@@ -55,11 +56,11 @@ img {
     line-height: 26px;
     color: var(--basic-black);
     background-color: var(--basic-white);
-  }
+}
 
 .site-nav {
     list-style: none;
-  }
+}
 
 .site-nav a {
     color: var(--basic-black);
@@ -84,12 +85,12 @@ img {
     background-color: var(--basic-white);
 }
 
-.main-subtitle p {
+.main-subtitle .subtitle-text {
     font-size: 14px;
     line-height: 26px;
 }
 
-.main-subtitle h3 {
+.main-subtitle .subtitle {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -107,13 +108,8 @@ img {
     text-align: center;
 }
 
-.reasons-item h3 {
-    font-weight: bold; 
-    font-size: 21px;
-    line-height: 21px;
-}
 
-.reasons-item-blue {
+.reasons-item-blue  {
     color: var(--basic-white);
     background-color: var(--basic-blue);
 }
@@ -122,9 +118,25 @@ img {
     background-color: var(--basic-light-gray)
 }
 
-.reasons-item-gray h3 {
+.reasons-item-gray {
     color: var(--basic-black)
 }
+
+.reasons-heading-white {
+    color: var(--basic-white);
+
+}
+
+.reasons-heading-black {
+    color: var(--basic-black);
+}
+
+.reasons-heading-white, .reasons-heading-black {
+    font-weight: bold; 
+    font-size: 21px;
+    line-height: 21px;
+}
+
 
 /* Advantages */
 
@@ -136,7 +148,7 @@ img {
     text-align: center;
 }
 
-.advantages-item h4 {
+.advantages-item .advantages-heading {
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black)
@@ -153,13 +165,13 @@ img {
     background-color: var(--basic-white);
 }
 
-.question-container h2 {
+.question-container .question-heading {
     font-size: 30px;
     line-height: 24px;
     color: var(--basic-black);
 }
 
-.question-container p {
+.question-container .question-text {
     font-size: 14px;
     line-height: 24px;
 }
@@ -180,7 +192,7 @@ img {
     color: var(--basic-black);
 }
 
-/* footer-social */
+/* Footer-social */
 
 .footer-social {
     text-align: center;
@@ -245,6 +257,8 @@ img {
     line-height: 26px;
     color: var(--basic-white);
     background-color: var(--dark-orange);
+    text-transform: uppercase;
+    border: none;
 }
 
 .button-find {
@@ -252,13 +266,15 @@ img {
     line-height: 26px;
     color: var(--basic-white);
     background-color: var(--basic-blue);
+    text-transform: uppercase;
+    border: none;
 }
 
 .search-button:hover {
     background-color: var(--background-hover-orange);
 }
 
-.search-button:active {
+.search-button:active .button-text {
     background-color: var(--background-active-orange);
     color: var(--basic-white);
     opacity: 0.3;
@@ -268,7 +284,7 @@ img {
     background-color: var(--background-hover-blue);
 }
 
-.button-find:active {
+.button-find:active .button-text {
     background-color: var(--background-active-blue);
     color: var(--basic-white);
     opacity: 0.3;
@@ -355,14 +371,14 @@ img {
     background-color: var(--basic-white);
 }
 
-.hotels h3 {
+.hotels .hotels-heading {
     color: var(--basic-black);
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
 }
 
-.hotels-item p {
+.hotels-item .hotels-text {
     font-size: 14px;
     line-height: 21px;
 }
@@ -375,6 +391,15 @@ img {
     background-color: var(--basic-blue);
 }
 
+.link-details:hover {
+    background-color: var(--background-hover-blue);
+}
+
+.link-details:active .button-text {
+    background-color: var(--background-active-blue);
+    opacity: 0.3;
+}
+
 .button-to-book {
     font-weight: bold;
     color: var(--basic-white);
@@ -383,16 +408,25 @@ img {
     background-color: var(--dark-orange);
 }
 
+.button-to-book:hover {
+    background-color: var(--background-hover-orange);
+}
+
+.button-to-book:active .button-text {
+    background-color: var(--background-active-orange);
+    opacity: 0.3;
+}
+
 .rating-hotel {
     color: var(--rating-color);
     background-color: var(--background-form);
 }
 
-.hotels-list h3:hover {
+.hotels-heading:hover {
     color: var(--basic-blue);
 }
 
-.hotels-list h3:active {
+.hotels-heading:active {
     color: var(--basic-black);
     opacity: 0.3;
 }
