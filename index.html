@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link href="./css/normalize.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -12,15 +14,15 @@
     <h1>Город Седона</h1>
     <nav class="main-nav">
       <ul class="site-nav">
-        <li><a>Информация</a></li>
-        <li><a>Фото и видео</a></li>
+        <li><a class="link-nav" href="*">Информация</a></li>
+        <li><a class="link-nav" href="*">Фото и видео</a></li>
         <li>
           <a class="header-logo">
             <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Логотип города Седона">
           </a>
         </li>
-        <li><a>Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+        <li><a class="link-nav" href="*">Карта штата</a></li>
+        <li><a class="link-nav" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -31,35 +33,39 @@
         <h2>Welcome</h2>
         <img src="https://via.placeholder.com/300x300" width="300" height="300" alt="Фото Каньона">
       </div>
-      <div>
-        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <div class="main-subtitle">
+        <h2 class="subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="subtitle-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
 
     <section class="reasons">
       <ul class="reasons-list">
         <li class="reasons-item">
-          <h3>Настоящий городок</h3>
-          <p>— №1 —</p>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="reasons-item-blue">
+           <h3 class="reasons-heading-white">Настоящий городок</h3>
+           <p>— №1 —</p>
+           <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
           <div>
             <img src="https://via.placeholder.com/200x200" width="200" height="200" alt="Фото Города">
           </div>
 
           <ul class="advantages-list">
+          <div class="advantages-container">
             <li class="advantages-item">
-              <h4>Жилье</h4>
+              <h4 class="advantages-heading">Жилье</h4>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="advantages-item">
-              <h4>Еда</h4>
+              <h4 class="advantages-heading">Еда</h4>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="advantages-item">
-              <h4>Сувениры</h4>
+              <h4 class="advantages-heading">Сувениры</h4>
               <p>Не только китайского, но и местного производства!</p>
             </li>
+          </div>
           </ul>
         </li>
         
@@ -68,33 +74,62 @@
         </div>
 
         <li class="reasons-item">
-          <h3>Там есть Мост дьявола</h3>
-          <p>— №2 —</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="reasons-item-blue">
+            <h3 class="reasons-heading-white">Там есть Мост дьявола</h3>
+            <p>— №2 —</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </li>
 
+        
+      <div class="reasons-item-gray">
         <li class="reasons-item">
-          <h3>небольшая площадь</h3>
+          <h3 class="reasons-heading-black">небольшая площадь</h3>
           <p>— №3 —</p>
           <p>все достопримечательности находятся очень близко</p>
         </li>
         <li class="reasons-item">
-          <h3>красивая дорога</h3>
+          <h3 class="reasons-heading-black">красивая дорога</h3>
           <p>— №4 —</p>
           <p>ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
         <li class="reasons-item">
-          <h3>мало туристов</h3>
+          <h3 class="reasons-heading-black">мало туристов</h3>
           <p>— №5 —</p>
           <p>большинство едет в гранд каньон и толпится там</p>
         </li>
+      </div>
       </ul>
     </section>
 
-    <div>
-      <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <div class="question-container">
+      <h2 class="question-heading">Заинтересовались?</h2>
+      <p class="question-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </div>
+
+    <section class="search-hotels">
+      <div class="search">
+       <button class="search-button">
+           <span class="button-text">Поиск гостиницы в Седоне</span>
+       </button>
+      </div>
+       <p>Дата заезда: 24 апреля 2017</p>
+       <p>Дата выезда: 4 июля 2017</p>
+       <p>Взрослые: 2</p>
+       <p>Дети: 0</p>
+       <button class="button-find">
+           <span class="button-text">Найти</span>
+       </button>
+     </div> 
+     </section>
+
+     <section class="modal-map">
+      <h2>Карта</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52382.130776383114!2d-111.79891566605879!3d34.859162704918255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1600179716682!5m2!1sru!2sru"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </section>     
 
   </main>
 
@@ -105,7 +140,7 @@
     </div>
 
     <div class="footer-social">
-      <ul>
+      <ul class="social-list">
         <li>
           <a class="social-button" href="#">Твиттер</a>
         </li>
@@ -125,23 +160,6 @@
       </a>
     </p>
   </footer>
-
-  <section class="modal-map">
-    <h2>Карта</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52382.130776383114!2d-111.79891566605879!3d34.859162704918255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1600179716682!5m2!1sru!2sru"
-      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0"></iframe>
-  </section>
-
-  <section class="form-search">
-    <button class="search-button">Поиск гостиницы в Седоне</button>
-    <p>Дата заезда: 24 апреля 2017</p>
-    <p>Дата выезда: 4 июля 2017</p>
-    <p>Взрослые: 2</p>
-    <p>Дети: 0</p>
-    <button class="button">Найти</button>
-  </section>
 
 </body>
 
